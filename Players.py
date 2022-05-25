@@ -1,11 +1,10 @@
-from Monopoly.Properties import Properties
-
+from Properties import *
 
 class Players(object):
 
-    def __init__(self,Name,Money,Position,Props):
+    def __init__(self,Name,Money,Position):
         self.Name = Name
-        self.Money = Money
+        self.Money = int(Money)
         self.Position = Position
         self.Props = []
     
@@ -20,6 +19,8 @@ class Players(object):
 
     def Call_Props(self):
         return self.Props
+
+    
 
     def Buy(self):
         if Players.Call_Money <= Properties.Call_Price:
