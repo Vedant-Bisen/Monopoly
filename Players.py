@@ -24,7 +24,6 @@ class Players(object):
     def Buy(self):
         if Players.Call_Money <= Properties.Call_Price:
             self.Props.append(Properties.Call_Name)
+            Properties.Bought(Properties.Call_Name)
         else:
             print("Ya POOR")
-
-    def House()

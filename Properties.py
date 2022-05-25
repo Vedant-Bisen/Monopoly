@@ -1,4 +1,7 @@
 
+from Monopoly.Players import Players
+
+
 class Properties(object):
 
     def __init__(self,Name,Price,Position,Houses,Owner):
@@ -6,7 +9,7 @@ class Properties(object):
         self.Price = Price
         self.Position = Position
         self.Houses = 0
-        self.Owner = False
+        self.Owner = ""
     
     def Call_Name(self):
         return self.Name
@@ -19,6 +22,10 @@ class Properties(object):
 
     def Call_Price(self):
         return self.Price
+    
+    def Bought(self):
+        self.Owner = Players.Call_Name
+        pass
 
 
     
