@@ -1,5 +1,3 @@
-from Properties import *
-
 class Players(object):
 
     def __init__(self,Name,Money,Position):
@@ -20,11 +18,3 @@ class Players(object):
     def Call_Props(self):
         return self.Props
 
-    
-
-    def Buy(self):
-        if Players.Call_Money <= Properties.Call_Price:
-            self.Props.append(Properties.Call_Name)
-            Properties.Bought(Properties.Call_Name)
-        else:
-            print("Ya POOR")

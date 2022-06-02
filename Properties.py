@@ -1,7 +1,3 @@
-
-from Players import *
-
-
 class Properties(object):
 
     def __init__(self,Name,Price,Position):
@@ -19,10 +15,10 @@ class Properties(object):
 
     def Call_Price(self):
         return self.Price
-    
-    def Bought(self):
-        self.Owner = Players.Call_Name
-        pass
 
+    def Call_Owner(self):
+        return self.Owner
+    
+    
 
     
